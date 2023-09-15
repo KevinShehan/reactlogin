@@ -1,0 +1,14 @@
+.Login{
+    background-color: blueviolet;
+    color: white; /* Set the text color to white */
+    width: 100%; /* Set the width of the button */
+    height: 7vh; /* Set the height of the button */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+.Login:hover {
+    background-color: darkviolet; /* Change the background color on hover */
+  }

@@ -1,0 +1,108 @@
+.screen {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.card {
+  display: grid;
+  width: 100%;
+  height: 70%;
+  max-width: 800px; /* Set a maximum width for the card */
+  background-color: white;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add any other styles you need for the card */
+}
+
+/* Left column of the card */
+.card-left {
+  padding: 20px;
+  border-right: 1px solid #ccc; /* Add a border between columns */
+}
+
+/* Right column of the card */
+.card-right {
+  padding: 20px;
+}
+
+/* Remove the border on the last column to prevent a double border */
+.card-right {
+  border-right: none;
+}
+
+img {
+  max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
+  max-height: 100%; /* Ensure the image doesn't exceed the viewport height */
+  display: block;
+  padding-top: 25%;
+  padding-right: 5%;
+}
+
+h1 {
+  text-align: center; /* Horizontal centering */
+  margin-top: 10px; /* Adjust as needed for vertical centering */
+}
+
+
+input {
+  padding: 10px; /* Adds some padding inside the input */
+  border: 1px solid #ccc; /* Adds a border with a light gray color */
+  border-radius: 5px; /* Rounds the corners */
+  font-size: 16px; /* Sets the font size */
+  width: 100%;
+}
+
+/* Style when the input is focused (clicked or selected) */
+input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a box shadow on focus */
+}
+
+/* Style for disabled input */
+input:disabled {
+  background-color: #f0f0f0; /* Change background color for disabled input */
+  color: #666; /* Change text color for disabled input */
+}
+
+.Loging{
+
+  width: 100%; /* Set the width of the button */
+  height: 7vh; /* Set the height of the button */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Set the font size */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+a{
+ text-decoration: none;
+ text-align: right;
+}
+
+.form{
+  margin: 20px;
+}
+
+
+.circle-with-text {
+  display: inline-flex;
+  align-items: center; /* Center the text vertically */
+}
+
+.circle-with-text::before {
+  content: " ";
+  width: 10px; /* Adjust the width and height to control the circle size */
+  height: 10px;
+  background-color: black; /* Change the background color to your desired color */
+  border-radius: 50%; /* Make it a circle */
+   /* Add some space between the circle and text */
+}
